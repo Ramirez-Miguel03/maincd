@@ -1,0 +1,151 @@
+*{
+    font-family: 'Poppins', sans serif;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url("image/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: #779D68;   
+}
+header{
+    min-height: 50px;
+    height: 50px;
+    display: flex; /*esto hace que vaya de izquierda a derecha */
+    background-color: #fafafa;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+header .logo .Crop{
+    padding-bottom: 20px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura para que el contenido esté en el centro de la pantalla */
+  }
+
+  div{
+    width: -200px;
+    margin: 100px;
+    font-size: 20px;
+    padding-bottom: 150px;
+    margin-top: -20px;
+  }
+  
+  .centro span {
+    order: -1; /* Cambia el orden para que el span esté arriba */
+    margin-bottom: -50px;
+    font-size: 13px;
+    color: #7A886D;
+  }
+  
+  .centro h2.regador {
+    order: 1; /* Cambia el orden para que el h2 con clase "regador" esté debajo del span */
+    margin-bottom: -50px;
+    font-size: 50px;
+    color: #3A4C37;
+    
+  }
+  
+  .centro h2.Automatico {
+    order: 2; /* Cambia el orden para que el h2 con clase "Automatico" esté debajo de "regador" */
+    font-size: 50px;
+    color: #5F9966;
+  }
+
+  article {
+    font-family: Araboto Bold;
+    flex-wrap: wrap;
+    height: 100px;
+    margin-top: -400px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 550px;
+    font-size: 15px;
+  }
+
+  /* .parrafo2 {
+     
+  } */
+  
+  .rama{
+    display: flex;
+    /* flex-direction: column; */
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .jitomates{
+    display: flex;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    top: 400px;
+  }
+
+  .planta1{
+    display: flex;
+    width: 5%;
+    position: absolute;
+    bottom: 0;
+    top: 200px;
+    left: 150px;
+    right: 10px;
+  }
+  
+  .planta2{
+    display: flex;
+    width: 2.5%;
+    position: absolute;
+    bottom: 0;
+    top: 200px;
+    left: 90px;
+    right: 10px;
+  }
+
+  .planta3{
+    display: flex;
+    width: 2.5%;
+    position: absolute;
+    bottom: 0;
+    top: 250px;
+    left: 90px;
+    right: 10px;
+  }
+
+  .planta4{
+    display: flex;
+    width: 5%;
+    position: absolute;
+    bottom: 0;
+    top: 350px;
+    right: 70px;
+    left: 950px;
+  }
+
+  .planta5{
+    display: flex;
+    width: 2.5%;
+    position: absolute;
+    bottom: 0;
+    top: 400px;
+    right: 150px;
+    left: 900px;
+  }
