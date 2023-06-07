@@ -1,151 +1,166 @@
-*{
-    font-family: 'Poppins', sans serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-body{
-    font-family: sans-serif;
-    margin: 0;
-    background-image: url("image/fondo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  background-image: url("image/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-a{
-    text-decoration: none;
-    color: #779D68;   
-}
-header{
-    min-height: 50px;
-    height: 50px;
-    display: flex; /*esto hace que vaya de izquierda a derecha */
-    background-color: #fafafa;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("image/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px); /* Aplica un difuminado de 5 píxeles */
 }
 
-header .logo .Crop{
-    padding-bottom: 20px;
+nav{
+  padding-right: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #779D68;
+  font-weight: 600;
+  margin-left: 3em;
+}
+
+header {
+  min-height: 5vh;
+  height: 5vh;
+  display: flex;
+  background-color: #EDF1D6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vh;
+}
+
+header .logo .Crop {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  font-weight: 900;
 }
 
 .centro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ajusta la altura para que el contenido esté en el centro de la pantalla */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
 
-  div{
-    width: -200px;
-    margin: 100px;
-    font-size: 20px;
-    padding-bottom: 150px;
-    margin-top: -20px;
-  }
-  
-  .centro span {
-    order: -1; /* Cambia el orden para que el span esté arriba */
-    margin-bottom: -50px;
-    font-size: 13px;
-    color: #7A886D;
-  }
-  
-  .centro h2.regador {
-    order: 1; /* Cambia el orden para que el h2 con clase "regador" esté debajo del span */
-    margin-bottom: -50px;
-    font-size: 50px;
-    color: #3A4C37;
-    
-  }
-  
-  .centro h2.Automatico {
-    order: 2; /* Cambia el orden para que el h2 con clase "Automatico" esté debajo de "regador" */
-    font-size: 50px;
-    color: #5F9966;
-  }
+.centro span {
+  order: -1;
+  font-size: 1em;
+  color: #7A886D;
+  margin-bottom: 0;
+}
 
-  article {
-    font-family: Araboto Bold;
-    flex-wrap: wrap;
-    height: 100px;
-    margin-top: -400px;
-    color: white;
-    padding-top: 10px;
-    padding-left: 70px;
-    padding-right: 550px;
-    font-size: 15px;
-  }
+.centro h2.regador {
+  order: 1;
+  font-size: 3em;
+  color: #3A4C37;
+  font-weight: 1200;
+  margin-bottom: -1vh;
+}
 
-  /* .parrafo2 {
-     
-  } */
-  
-  .rama{
-    display: flex;
-    /* flex-direction: column; */
-    width: 40%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+.centro h2.Automatico {
+  order: 2;
+  font-size: 3em;
+  color: #5F9966;
+  margin-bottom: 0;
+  font-weight: 1200;
+}
 
-  .jitomates{
-    display: flex;
-    width: 20%;
-    position: absolute;
-    bottom: 0;
-    top: 400px;
-  }
+article {
+  font-family: 'Roboto Bold';
+  flex-wrap: wrap;
+  height: 10vh;
+  width: 40vh;
+  margin-top: -20vh;
+  color: #EDF1D6;
+  padding-top: 3vh;
+  padding-left: 15vw;
+  padding-right: 30vw;
+  font-size: 1em;
+}
 
-  .planta1{
-    display: flex;
-    width: 5%;
-    position: absolute;
-    bottom: 0;
-    top: 200px;
-    left: 150px;
-    right: 10px;
-  }
-  
-  .planta2{
-    display: flex;
-    width: 2.5%;
-    position: absolute;
-    bottom: 0;
-    top: 200px;
-    left: 90px;
-    right: 10px;
-  }
+.rama {
+  display: flex;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
-  .planta3{
-    display: flex;
-    width: 2.5%;
-    position: absolute;
-    bottom: 0;
-    top: 250px;
-    left: 90px;
-    right: 10px;
-  }
+.jitomates {
+  display: flex;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  top: 40vh;
+}
 
-  .planta4{
-    display: flex;
-    width: 5%;
-    position: absolute;
-    bottom: 0;
-    top: 350px;
-    right: 70px;
-    left: 950px;
-  }
+.planta1 {
+  display: flex;
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  top: 20vh;
+  left: 15vw;
+  right: 1vw;
+}
 
-  .planta5{
-    display: flex;
-    width: 2.5%;
-    position: absolute;
-    bottom: 0;
-    top: 400px;
-    right: 150px;
-    left: 900px;
-  }
+.planta2 {
+  display: flex;
+  width: 2.5%;
+  position: absolute;
+  bottom: 0;
+  top: 20vh;
+  left: 9vw;
+  right: 1vw;
+}
+
+.planta3 {
+  display: flex;
+  width: 2.5%;
+  position: absolute;
+  bottom: 0;
+  top: 25vh;
+  left: 9vw;
+  right: 1vw;
+}
+
+.planta4 {
+  display: flex;
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  top: 50%;
+  left: 70%;
+}
+
+.planta5 {
+  display: flex;
+  width: 2.5%;
+  position: absolute;
+  bottom: 0;
+  top: 60%;
+  left: 65%;
+}
